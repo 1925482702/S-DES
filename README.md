@@ -1,4 +1,3 @@
-# S-DES
 # 项目大致情况
 
 该项目全程使用 **java+swing**规范代码实现，内容包括简易版DES算法（S-DES）的原理实现（包括给定明文密钥的加密过程、给定密文密钥的解密过程、给定明文密文的密钥破解过程）、界面设计、多线程的应用等。
@@ -7,38 +6,38 @@
 ### 第一关 基本测试
 欢迎界面<br>
 #### 包含项目标题以及三个分页面的按键入口，点击按钮即可进入相应界面
-![img.png](img.png)<br>
+![img.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img.png)<br>
 
 加密/解密界面<br>
 #### 包含有八位明文框、十位密钥框、八位密文框。
-![img_1.png](img_1.png)<br>
+![img_1.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_1.png)<br>
 
 #### 键入八位明文，十位密钥时，点击加密按钮，即可生成对应密文
-![img_2.png](img_2.png)![img_3.png](img_3.png)
+![img_2.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_2.png)![img_3.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_3.png)
 
 #### 键入八位密文，十位密钥时，点击解密按钮，即可生成对应明文
-![img_4.png](img_4.png)![img_5.png](img_5.png)
+![img_4.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_4.png)![img_5.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_5.png)
 
 #### 当任意框内键入位数不正确或出现非二进制数时，报错
-![img_6.png](img_6.png)![img_7.png](img_7.png)![img_8.png](img_8.png)![img_11.png](img_11.png)
+![img_6.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_6.png)![img_7.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_7.png)![img_8.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_8.png)![img_11.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_11.png)
 
 ### 第二关 交叉测试
 #### 使用的测试对：明文00100100；密钥1101101101
 我们组的明文加密结果
-![img_13.png](img_13.png)
+![img_13.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_13.png)
 验证组的明文加密结果
-![img_14.png](img_14.png)
+![img_14.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_14.png)
 可以看到加密结果是一致的
 
 ### 第三关 扩展功能
 #### 可用于加密ascll码，以字符串 "test"为例，如图
-![img_19.png](img_19.png)![img_17.png](img_17.png)
+![img_19.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_19.png)![img_17.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_17.png)
 #### 解密时同理
-![img_18.png](img_18.png)![img_21.png](img_21.png)
+![img_18.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_18.png)![img_21.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_21.png)
 
 ### 第四关 暴力破解
 #### 对于一个明密文对，使用暴力破解的方式获得密钥，这里使用了多线程的方式，将在后续代码部分提到
-![img_23.png](img_23.png)![img_24.png](img_24.png)
+![img_23.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_23.png)![img_24.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_24.png)
 
 ### 第五关 封闭测试
 #### 由第四关可知，对于同一个明密文对，密钥可能不止一把。即存在对于同一个明文，不同的密钥加密得到的密文相同的情况
@@ -418,16 +417,16 @@ S-DES使用Feistel网络结构，将明文数据分成两半，然后进行一�
 密钥生成是S-DES中关键的一步。它从10bit密钥生成两个8bit子密钥，用于加密和解密过程。
 
 2.4 GUI界面
-![img_25.png](img_25.png)
-![img_27.png](img_27.png)
-![img_28.png](img_28.png)
-![img_29.png](img_29.png)
+![img_25.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_25.png)
+![img_27.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_27.png)
+![img_28.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_28.png)
+![img_29.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_29.png)
 <br>3 使用S-DES加密<br>
 输入正确的明文和密钥后点击加密即可
-![img_30.png](img_30.png)
+![img_30.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_30.png)
 <br>4 使用S-DES解密<br>
 输入正确的密文和密钥后点击解密即可
-![img_34.png](img_34.png)
+![img_34.png](https://github.com/1925482702/S-DES/tree/main/S-DES/out/production/S-DES/img_34.png)
 
 # 联系作者
 qq：1925482702@qq.com
